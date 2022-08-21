@@ -1,0 +1,577 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS reset Close */
+
+
+/* NavBar */
+:root {
+	--underline-height: .5em;
+	--transition-duration : .5s;
+}
+
+body {
+	font-family: system-ui, sans-serif;
+	background: #222222;
+}
+
+nav {
+	position: relative;
+	white-space: nowrap;
+	background: white;
+	padding: var(--underline-height) 0;
+	box-shadow: 0 1em 2em rgba(black, .05);
+}
+
+.underline {
+	display: block;
+	position: absolute;
+	z-index: 0;
+	bottom: 0;
+	left: 0;
+	height: var(--underline-height);
+	width: 13.5%;
+	background: black;
+	pointer-events: none;
+	mix-blend-mode: multiply;
+	transition: transform var(--transition-duration) ease-in-out;
+}
+a {
+	display: inline-block;
+	z-index: 0;
+	width: 10.5%;
+	padding: 1em 0;
+	text-align: center;
+	cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+
+nav.full {
+	font-weight: bold;
+	background: black;
+	color: white;
+	text-align: center;
+	cursor: default;
+}
+.underline {
+  height: 100%;
+  background: gold;
+}
+/* Navbar Close */
+
+
+
+/* Home */
+#heading{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+
+#right-heading{
+	animation-duration: 1.5s;
+  animation-name: slideright;
+	font-size: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+@keyframes slideright {
+  from {
+    margin-left: 200%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#left-heading{
+	text-align: center;
+	animation-duration: 1.5s;
+  animation-name: slideleft;
+	font-size: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+@keyframes slideleft {
+  from {
+    margin-left: -200%;
+    width: -300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: -100%;
+  }
+}
+/* Home close */
+
+/* Sidebar Ciphers */
+.ciphers{
+	display: flex;
+	flex-direction: column;
+	height: 90vh;
+	justify-content: center;
+	font-size: 2vw;
+	align-items:flex-start;
+}
+
+#ciphers-cover{
+	animation-duration: 1.5s;
+  animation-name: slide-additive;
+	border: 1px solid black;
+	border-top-right-radius: 25%;
+	border-bottom-right-radius: 25%;
+	width: 20%;
+	background-color: black;
+	color: white;
+
+}
+
+.additive{
+	animation-duration: 1.5s;
+  animation-name: slide-additive;
+	display: flex;
+	height: 10vh;
+	align-items: center;
+	cursor: pointer;
+}
+.multiplicative{
+	animation-duration: 1.5s;
+  animation-name: slide-multiplicative;
+	display: flex;
+	height: 10vh;
+	align-items: center;
+	cursor: pointer;
+}
+.autokey{
+	animation-duration: 1.5s;
+  animation-name: slide-autokey;
+	display: flex;
+	height: 10vh;
+	align-items: center;
+	cursor: pointer;
+}
+.rsa{
+	animation-duration: 1.5s;
+  animation-name: slide-rsa;
+	display: flex;
+	height: 10vh;
+	align-items: center;
+	cursor: pointer;
+}
+.affine{
+	animation-duration: 1.5s;
+  animation-name: slide-affine;
+	display: flex;
+	height: 10vh;
+	align-items: center;
+	cursor: pointer;
+}
+
+@keyframes slide-additive {
+  from {
+    margin-left: -50%;
+    width: -300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: -100%;
+  }
+}
+@keyframes slide-multiplicative {
+  from {
+    margin-left: -100%;
+    width: -300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: -100%;
+  }
+}
+@keyframes slide-autokey {
+  from {
+    margin-left: -150%;
+    width: -300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: -100%;
+  }
+}
+@keyframes slide-rsa {
+  from {
+    margin-left: -200%;
+    width: -300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: -100%;
+  }
+}
+@keyframes slide-affine {
+  from {
+    margin-left: -250%;
+    width: -300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: -100%;
+  }
+}
+
+.underlinevnav {
+	display: flex;
+	position: absolute;
+	z-index: 0;
+	height: 10vh;
+	width: 19%;
+	background: gold;
+	pointer-events: none;
+	mix-blend-mode: multiply;
+	transition: transform var(--transition-duration) ease-in-out;
+	border-end-end-radius: 50%;
+	border-start-end-radius: 50%;
+}
+/* Sidebar Ciphers close */
+
+
+/* Logo */
+#imgDesktop{
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+}
+/* Logo close */
+
+
+
+
+/* Responsive */
+@media (max-width:600px){
+
+	.underline{
+		z-index: 1;
+    height: 13.334%;
+    bottom: 83%;
+    width: 99%;
+	}
+	#menu-btn{
+		display: block;
+	}
+
+	nav.full{
+		display: none;
+	}
+	.wrapper{
+		display: block;
+	}
+
+	#imgBackground{
+		height: 64px;
+		background: #111;
+    position: absolute;
+    width: -webkit-fill-available;
+	}
+
+	#imgMobile{
+		width: 64px;
+		height: 64px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		cursor: pointer;
+		display: block;
+	}
+
+	a{
+		width: auto;
+	}
+
+  .ciphers{
+		height: 100vh;
+		justify-content: end;
+	}
+	#ciphers-cover{
+		height: 10%;
+		width: 100%;
+		border: none;
+		border-top-right-radius: 25%;
+    border-bottom-right-radius: 0%;
+		border-top-left-radius: 25%;
+		display: flex;
+	}
+
+
+	.underlinevnav{
+		width: 20%;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		height: 9vh;
+    margin-top: 7.9px;
+
+	}
+
+	.additive{
+		width: 25%;
+		justify-content: center;
+	}
+
+	.multiplicative{
+		width: 25%;
+		justify-content: center;
+	}
+
+	.autokey{
+		width: 25%;
+		justify-content: center;
+	}
+
+	.rsa{
+		width: 25%;
+		justify-content: center;
+	}
+
+	.affine{
+		width: 25%;
+	}
+
+	@keyframes slide-additive {
+		from {
+			margin-bottom: -50%;
+			width: -300%;
+		}
+	
+		to {
+			margin-bottom: 0%;
+			width: -100%;
+		}
+	}
+	@keyframes slide-multiplicative {
+		from {
+			margin-bottom: -100%;
+			width: -300%;
+		}
+	
+		to {
+			margin-bottom: 0%;
+			width: -100%;
+		}
+	}
+	@keyframes slide-autokey {
+		from {
+			margin-bottom: -150%;
+			width: -300%;
+		}
+	
+		to {
+			margin-bottom: 0%;
+			width: -100%;
+		}
+	}
+	@keyframes slide-rsa {
+		from {
+			margin-bottom: -200%;
+			width: -300%;
+		}
+	
+		to {
+			margin-bottom: 0%;
+			width: -100%;
+		}
+	}
+	@keyframes slide-affine {
+		from {
+			margin-bottom: -250%;
+			width: -300%;
+		}
+	
+		to {
+			margin-bottom: 0%;
+			width: -100%;
+		}
+	}
+
+
+}
+
+@media (min-width:600px){
+	
+	.wrapper{
+		display: none;
+	}
+
+	#imgBackground{
+		display: none;
+	}
+	#imgMobile{
+		display: none;
+	}
+}
+/* Responsive close */
+
+/* Burger */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+.wrapper{
+  position: fixed;
+
+  height: 100%;
+  width: 100%;
+  background: #000;
+  clip-path: circle(25px at calc(100% - 34px) 34px);
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+	z-index: 1;
+
+}
+.menu-btn{
+  position: absolute;
+  z-index: 2;
+  right: 9px;
+  top: 9px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+	display: none;
+  background: #111;
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .menu-btn{
+  color: #fff;
+}
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+}
+.wrapper ul li{
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  color: none;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px 30px;
+  color: #fff;
+  position: relative;
+  line-height: 50px;
+  transition: all 0.3s ease;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #202020;
+}
+.content .title{
+  font-size: 40px;
+  font-weight: 700;
+}
+.content p{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+/* Burger close */

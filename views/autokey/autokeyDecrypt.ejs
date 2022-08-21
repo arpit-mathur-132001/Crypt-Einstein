@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="/css/ciphers.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  
+  <input type="checkbox" id="active">
+  <label for="active" class="menu-btn" id="menu-btn">
+    <i class="fas fa-bars">
+
+    </i>
+  </label>
+  <div class="wrapper">
+    <ul>
+      <div class="underline" style="transform: translate3d(0px, 450%, 0px);">
+      </div>
+      <div class="underline" style="transform: translate3d(0px, 450%, 0px);">
+      </div>
+      <div class="underline" style="transform: translate3d(0px, 450%, 0px);">
+      </div>
+      <li><a id="Vhome">Home</a></li>
+      <li><a id="Vabout">About</a></li>
+      <li><a id="Vencrypt">Encrypt</a></li>
+      <li><a id="Vdecrypt">Decrypt</a></li>
+      <li><a id="Vbruteforce">Brute Force</a></li>
+    </ul>
+  </div>
+  
+  <div id="imgBackground"></div>
+  <img src="../image/icon.png" id="imgMobile">
+
+  <!-- Navbar -->
+  <nav class="full">
+    <img src="../image/icon.png" id="imgDesktop">
+    <div class="underline"  style="transform: translate3d(396%, 0px, 0px);">
+    </div>
+    <div class="underline"  style="transform: translate3d(396%, 0px, 0px);">
+    </div>
+    <div class="underline"  style="transform: translate3d(396%, 0px, 0px);">
+    </div>
+  <%-include("../partials/nav")%>
+  <!-- Navbar Close -->
+
+  <ul class="input-requirements">
+    <li id="filled">
+      Must be filled before conversion
+    </li>
+    <li style="color: #2ecc71;">
+      Maximum allowed length = 16 &#10003;
+    </li>
+  </ul>    
+
+  <div class="form__group3 field" style="opacity: 0;">
+    <textarea rows="15" type="input" class="form__field" placeholder="Name" name="nameKey" id='nameKey' maxlength="16" required ></textarea>
+    <label for="name" class="form__label" id="labelKey">Key</label>
+  </div>
+
+
+  <div class="form__group1 field" style="opacity: 0;">
+    <textarea rows="23" type="input" class="form__field" placeholder="Name" name="name" id='nameDecrypt' required ></textarea>
+    <label for="name" class="form__label" id="labelEncrypt">Cipher Text</label>
+  </div>
+  <div class="form__group2 field" style="opacity: 0;">
+    <textarea rows="23" type="input" class="form__field" placeholder="Name" name="name" id='nameEncrypt' required ></textarea>
+    <label for="name" class="form__label" id="labelDecrypt">Plain Text</label>
+  </div>
+
+
+  <div class="ciphers">
+    <div id="ciphers-cover">
+      <div class="underlinevnav" id="autokey"style="transform: translate3d(0px, 200%, 0px);">
+      </div>
+      <div class="underlinevnav"id="autokey" style="transform: translate3d(0px, 200%, 0px);">
+      </div>
+      <div class="underlinevnav"id="autokey" style="transform: translate3d(0px, 200%, 0px);">
+      </div>
+      <div id="additiveDecrypt" class="additive">Additive Cipher</div>
+      <div id="multiplicativeDecrypt" class="multiplicative">Multiplicative Cipher</div>
+      <div id="autokeyDecrypt" class="autokey">
+        Autokey Cipher
+      </div>
+      <div id="rsaDecrypt" class="rsa">RSA Algorithm</div>
+      <div id="affineDecrypt" class="affine">Affine Cipher</div>  
+    </div>
+  </div>
+  <script src="/js/autokey/autokeyDecrypt.js"></script>
+</body>
+</html>
