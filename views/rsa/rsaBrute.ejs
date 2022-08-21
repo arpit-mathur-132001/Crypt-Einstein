@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="/css/autokeyBruteConstruction.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="overlay"></div>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="starts2" aria-hidden="true"></div>
+  <div class="stars3" aria-hidden="true"></div>
+  <main class="main">
+    <section class="contact">
+      <h1 class="title">Under Construction</h1>
+      <h2 class="sub-title">AutoKey Brute Force</h2>
+    </section>
+  </main>
+
+  <input type="checkbox" id="active">
+  <label for="active" class="menu-btn" id="menu-btn">
+    <i class="fas fa-bars">
+
+    </i>
+  </label>
+  <div class="wrapper">
+    <ul>
+      <div class="underline" style="transform: translate3d(0px, 600%, 0px);">
+      </div>
+      <div class="underline" style="transform: translate3d(0px, 600%, 0px);">
+      </div>
+      <div class="underline" style="transform: translate3d(0px, 600%, 0px);">
+      </div>
+      <li><a id="Vhome">Home</a></li>
+      <li><a id="Vabout">About</a></li>
+      <li><a id="Vencrypt">Encrypt</a></li>
+      <li><a id="Vdecrypt">Decrypt</a></li>
+      <li><a id="Vbruteforce">Brute Force</a></li>
+      </ul>
+  </div>
+  <div id="imgBackground"></div>
+  <img src="../image/icon.png" id="imgMobile">
+  <nav class="full">
+    <img src="../image/icon.png" id="imgDesktop">
+    <div class="underline" style="transform: translate3d(495%, 0px, 0px);">
+    </div>
+    <div class="underline" style="transform: translate3d(495%, 0px, 0px);">
+    </div>
+    <div class="underline" style="transform: translate3d(495%, 0px, 0px);">
+    </div>
+  <%-include("../partials/nav")%>
+  <!-- Navbar Close -->
+
+  <div class="ciphers">
+    <div id="ciphers-cover">
+      <div class="underlinevnav" id="rsa"style="transform: translate3d(0px, 200%, 0px);">
+      </div>
+      <div class="underlinevnav"id="rsa" style="transform: translate3d(0px, 200%, 0px);">
+      </div>
+      <div class="underlinevnav"id="rsa" style="transform: translate3d(0px, 200%, 0px);">
+      </div>
+      <div id="additiveBrute" class="additive">Additive Cipher</div>
+      <div id="multiplicativeBrute" class="multiplicative">Multiplicative Cipher</div>
+      <div id="autokeyBrute" class="autokey">
+        Autokey Cipher
+      </div>
+      <div id="rsaBrute" class="rsa">RSA Algorithm</div>
+      <div id="affineBrute" class="affine">Affine Cipher</div>  
+    </div>
+  </div>
+  <script src="/js/rsa/rsaBrute.js"></script>
+</body>
+</html>
