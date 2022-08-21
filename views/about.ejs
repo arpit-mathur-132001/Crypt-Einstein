@@ -7,11 +7,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/autokeyBruteConstruction.css">
   <title>Document</title>
 </head>
 <body>
-  <!-- Navbar -->
+
+  <div class="overlay"></div>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="starts2" aria-hidden="true"></div>
+  <div class="stars3" aria-hidden="true"></div>
+  <main class="main" style="top: 500%;">
+    <section class="contact">
+      <h1 class="title">Under Construction</h1>
+      <h2 class="sub-title">About</h2>
+    </section>
+  </main>
+
   <input type="checkbox" id="active">
   <label for="active" class="menu-btn" id="menu-btn">
     <i class="fas fa-bars">
@@ -34,10 +45,9 @@
       </ul>
   </div>
   <div id="imgBackground"></div>
-  <img src="../image/icon.png" id="imgMobile">
-
+  <img src="/image/icon.png" id="imgMobile">
   <nav class="full">
-    <img src="image/icon.png" id="imgDesktop">
+    <img src="/image/icon.png" id="imgDesktop">
     <div class="underline" style="transform: translate3d(197%, 0px, 0px);">
     </div>
     <div class="underline" style="transform: translate3d(197%, 0px, 0px);">
@@ -46,7 +56,6 @@
     </div>
   <%-include("partials/nav")%>
   <!-- Navbar Close -->
-
-  <script src="/js/about.js"></script>
+  <script src="/js/rsa/rsaBrute.js"></script>
 </body>
 </html>
