@@ -12,6 +12,17 @@
 </head>
 <body>
 
+  <div class="overlay"></div>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="starts2" aria-hidden="true"></div>
+  <div class="stars3" aria-hidden="true"></div>
+  <main class="main">
+    <section class="contact">
+      <h1 class="title">Under Construction</h1>
+      <h2 class="sub-title">RSA About</h2>
+    </section>
+  </main>
+
   <input type="checkbox" id="active">
   <label for="active" class="menu-btn" id="menu-btn">
     <i class="fas fa-bars">
@@ -34,18 +45,35 @@
       </ul>
   </div>
   <div id="imgBackground"></div>
-  <img src="/image/icon.png" id="imgMobile">
+  <img src="../image/icon.png" id="imgMobile">
   <nav class="full">
-    <img src="/image/icon.png" id="imgDesktop">
+    <img src="../image/icon.png" id="imgDesktop">
     <div class="underline" style="transform: translate3d(197%, 0px, 0px);">
     </div>
     <div class="underline" style="transform: translate3d(197%, 0px, 0px);">
     </div>
     <div class="underline" style="transform: translate3d(197%, 0px, 0px);">
     </div>
-  <%-include("partials/nav")%>
+  <%-include("../partials/nav")%>
   <!-- Navbar Close -->
-  <%-include("partials/vnavAbout")%>
-  <script src="/js/about.js"></script>
+
+  <div class="ciphers">
+    <div id="ciphers-cover">
+      <div class="underlinevnav" id="rsa"style="transform: translate3d(0px, 300%, 0px);">
+      </div>
+      <div class="underlinevnav"id="rsa" style="transform: translate3d(0px, 300%, 0px);">
+      </div>
+      <div class="underlinevnav"id="rsa" style="transform: translate3d(0px, 300%, 0px);">
+      </div>
+      <div id="additiveAbout" class="additive">Additive Cipher</div>
+      <div id="multiplicativeAbout" class="multiplicative">Multiplicative Cipher</div>
+      <div id="autokeyAbout" class="autokey">
+        Autokey Cipher
+      </div>
+      <div id="rsaAbout" class="rsa">RSA Algorithm</div>
+      <div id="affineAbout" class="affine">Affine Cipher</div>  
+    </div>
+  </div>
+  <script src="/js/rsa/rsaAbout.js"></script>
 </body>
 </html>

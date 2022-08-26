@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="/css/autokeyAbout.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+  <input type="checkbox" id="active">
+  <label for="active" class="menu-btn" id="menu-btn">
+    <i class="fas fa-bars">
+
+    </i>
+  </label>
+  <div class="wrapper">
+    <ul>
+      <div class="underline" style="transform: translate3d(0px, 150%, 0px);">
+      </div>
+      <div class="underline" style="transform: translate3d(0px, 150%, 0px);">
+      </div>
+      <div class="underline" style="transform: translate3d(0px, 150%, 0px);">
+      </div>
+      <li><a id="Vhome">Home</a></li>
+      <li><a id="Vabout">About</a></li>
+      <li><a id="Vencrypt">Encrypt</a></li>
+      <li><a id="Vdecrypt">Decrypt</a></li>
+      <li><a id="Vbruteforce">Brute Force</a></li>
+      </ul>
+  </div>
+  <div id="imgBackground"></div>
+  <img src="../image/icon.png" id="imgMobile">
+  <nav class="full">
+    <img src="../image/icon.png" id="imgDesktop">
+    <div class="underline" style="transform: translate3d(197%, 0px, 0px);">
+    </div>
+    <div class="underline" style="transform: translate3d(197%, 0px, 0px);">
+    </div>
+    <div class="underline" style="transform: translate3d(197%, 0px, 0px);">
+    </div>
+  <%-include("../partials/nav")%>
+  <!-- Navbar Close -->
+
+  <div class="container">
+    <section>
+      Encryption<br><br>
+      <img src="../image/autokey.gif" width="20%" alt=""><br><br>
+      <li>In Encryption, the whole Plain Text is appended with Key to obtain Key Stream, then the Plain Text and the Key Stream are added together to obtain the Encrypted Text.</li><br>
+      <li>Example :</li>
+      <li style="text-indent: 10%;line-height:150%;">Plain Text = "autokey cipher"</li>
+      <li style="text-indent: 10%;line-height:150%;">Key = a32 b</li>
+      <li style="text-indent: 10%;line-height:150%;">Encrypted Text = "autoles vwzlct"</li>
+    </section>
+    <section>
+      Decryption<br><br>
+      <img src="../image/autokey.gif" width="20%" alt=""><br><br>
+      <li>In Decryption, the whole Cipher Text is appended with Key to obtain Key Stream, then the Plain Text and the Key Stream are added together to obtain the Plain Text.</li><br>
+      <li>Example :</li>
+      <li style="text-indent: 10%;line-height:150%;">Encrypted Text = "autoles vwzlct"</li>
+      <li style="text-indent: 10%;line-height:150%;">Key = a32 b</li>
+      <li style="text-indent: 10%;line-height:150%;">Plain Text = "autokey cipher"</li>
+    </section>
+  </div>
+
+  <div class="ciphers">
+    <div id="ciphers-cover">
+      <div class="underlinevnav" id="autokey"style="transform: translate3d(0px, 200%, 0px);">
+      </div>
+      <div class="underlinevnav"id="autokey" style="transform: translate3d(0px, 200%, 0px);">
+      </div>
+      <div class="underlinevnav"id="autokey" style="transform: translate3d(0px, 200%, 0px);">
+      </div>
+      <div id="additiveAbout" class="additive">Additive Cipher</div>
+      <div id="multiplicativeAbout" class="multiplicative">Multiplicative Cipher</div>
+      <div id="autokeyAbout" class="autokey">
+        Autokey Cipher
+      </div>
+      <div id="rsaAbout" class="rsa">RSA Algorithm</div>
+      <div id="affineAbout" class="affine">Affine Cipher</div>  
+    </div>
+  </div>
+  <script src="/js/autokey/autokeyAbout.js"></script>
+</body>
+</html>

@@ -90,6 +90,26 @@ app.get("/affine/affineBrute",(req,res)=>{
   res.render("affine/affineBrute.ejs")
 })
 
+app.get("/additive/additiveAbout",(req,res)=>{
+  res.render("additive/additiveAbout.ejs")
+})
+
+app.get("/multiplicative/multiplicativeAbout",(req,res)=>{
+  res.render("multiplicative/multiplicativeAbout.ejs")
+})
+
+app.get("/autokey/autokeyAbout",(req,res)=>{
+  res.render("autokey/autokeyAbout.ejs")
+})
+
+app.get("/rsa/rsaAbout",(req,res)=>{
+  res.render("rsa/rsaAbout.ejs")
+})
+
+app.get("/affine/affineAbout",(req,res)=>{
+  res.render("affine/affineAbout.ejs")
+})
+
 
 const port=process.env.PORT||3000;
 app.listen(port,()=>{

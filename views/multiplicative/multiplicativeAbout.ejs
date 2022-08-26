@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="/css/multiplicativeAbout.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <input type="checkbox" id="active">
+  <label for="active" class="menu-btn" id="menu-btn">
+    <i class="fas fa-bars">
+
+    </i>
+  </label>
+  <div class="wrapper">
+    <ul>
+      <div class="underline" style="transform: translate3d(0px, 150%, 0px);">
+      </div>
+      <div class="underline" style="transform: translate3d(0px, 150%, 0px);">
+      </div>
+      <div class="underline" style="transform: translate3d(0px, 150%, 0px);">
+      </div>
+      <li><a id="Vhome">Home</a></li>
+      <li><a id="Vabout">About</a></li>
+      <li><a id="Vencrypt">Encrypt</a></li>
+      <li><a id="Vdecrypt">Decrypt</a></li>
+      <li><a id="Vbruteforce">Brute Force</a></li>
+      </ul>
+  </div>
+  <div id="imgBackground"></div>
+  <img src="../image/icon.png" id="imgMobile">
+  <nav class="full">
+    <img src="../image/icon.png" id="imgDesktop">
+    <div class="underline" style="transform: translate3d(197%, 0px, 0px);">
+    </div>
+    <div class="underline" style="transform: translate3d(197%, 0px, 0px);">
+    </div>
+    <div class="underline" style="transform: translate3d(197%, 0px, 0px);">
+    </div>
+  <%-include("../partials/nav")%>
+  <!-- Navbar Close -->
+
+  <div class="container">
+    <section>
+      Encryption<br><br>
+      <img src="../image/multiplicative.png" alt="" style="width: 40%;"><br><br>
+      <li>In Encryption each Character of Plain Text is First Multiplied by the value of Key and then Product of Character and Key is then Modulo by 26.</li><br>
+      <li>The value of Key has to be choosen such that the GCD of Key and 26 will 
+        be equal to 1.</li><br>
+      <li>Example :</li>
+      <li style="text-indent: 10%;line-height:150%;">Plain Text = "abxy"</li>
+      <li style="text-indent: 10%;line-height:150%;">Key = 5</li>
+      <li style="text-indent: 10%;line-height:150%;">Encrypted = "aflq"</li>
+    </section>
+    <section>
+      Decryption<br><br>
+      <img src="../image/multiplicative.png" alt="" style="width: 40%;"><br><br>
+      <li>In Decryption each Character of Encrypted Text is First Multiplied by the Modular Inverse of the value of key and then Product of Charactere and Modular Inverse of Key is then Modulo by 26.</li><br>
+      <li>The value of key has to be choosen such that the GCD of Key and 26 will 
+        be Equal to 1.</li><br>
+      <li>Example :</li>
+      <li style="text-indent: 10%;line-height:150%;">Encrypted Text = "aflq"</li>
+      <li style="text-indent: 10%;line-height:150%;">Key = 5</li>
+      <li style="text-indent: 10%;line-height:150%;">Plain Text = "abxy"</li>
+    </section>
+  </div>
+
+  <div class="ciphers">
+    <div id="ciphers-cover">
+      <div class="underlinevnav" id="multiplicative"style="transform: translate3d(0px, 100%, 0px);">
+      </div>
+      <div class="underlinevnav"id="multiplicative" style="transform: translate3d(0px, 100%, 0px);">
+      </div>
+      <div class="underlinevnav"id="multiplicative" style="transform: translate3d(0px, 100%, 0px);">
+      </div>
+      <div id="additiveAbout" class="additive">Additive Cipher</div>
+      <div id="multiplicativeAbout" class="multiplicative">Multiplicative Cipher</div>
+      <div id="autokeyAbout" class="autokey">
+        Autokey Cipher
+      </div>
+      <div id="rsaAbout" class="rsa">RSA Algorithm</div>
+      <div id="affineAbout" class="affine">Affine Cipher</div>  
+    </div>
+  </div>
+  <script src="/js/multiplicative/multiplicativeAbout.js"></script>
+</body>
+</html>
